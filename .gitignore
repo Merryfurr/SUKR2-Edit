@@ -25,11 +25,11 @@ $RECYCLE.BIN/
 #src\main\java\buildcraft\
 #src\main\java\mca\
 #src\main\java\cofh\
-.gradle\
-.settings\
-bin\
-build\
-eclipse\
+.gradle/
+.settings/
+bin/
+build/
+eclipse/
 
 # =========================
 # Operating System Files
