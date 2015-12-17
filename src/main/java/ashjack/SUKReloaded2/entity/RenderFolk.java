@@ -1,5 +1,6 @@
 package ashjack.SUKReloaded2.entity;
 
+import ashjack.SUKReloaded2.folk.FolkData;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.entity.Entity;
@@ -38,14 +39,13 @@ public class RenderFolk extends RenderLiving
     @Override
     protected ResourceLocation getEntityTexture(Entity par1Entity)
     {
-    	/*if (par1Entity instanceof EntityFolk) 
+    	if (par1Entity instanceof EntityFolk) 
     	{
 			EntityFolk theFolk = (EntityFolk)par1Entity;
 			FolkData theData = FolkData.getFolkDataByEntityId(theFolk.getEntityId());
-			ResourceLocation myTexture = theData.folkRace.getSkinPath(theData.folkRace.skinNumber);
+			ResourceLocation myTexture = theData.race.getSkinPath(theData.race.skinNumber);
 			return myTexture;
-		}*/
-		//return null;
-    	return new ResourceLocation("suk2", "textures/races/elf/female3.png");
+		}
+		return null;
     }
 }

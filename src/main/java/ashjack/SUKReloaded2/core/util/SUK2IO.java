@@ -10,7 +10,7 @@ public class SUK2IO
 		{
 			String strmc = new File(".").getAbsolutePath();
 			strmc = strmc.substring(0, strmc.length() - 1);
-			return new File(strmc + File.separator + "Simukraft_Reloaded").getAbsolutePath();
+			return new File(strmc + File.separator + "resources" + File.separator + "Simukraft2").getAbsolutePath();
 		}
 		catch (Exception e)
 		{
@@ -24,7 +24,7 @@ public class SUK2IO
 		{
 			String strmc = new File(".").getAbsolutePath();
 			strmc = strmc.substring(0, strmc.length() - 1);
-			return new File(strmc + File.separator + "Simukraft_Reloaded" + File.separator + subCategory).getAbsolutePath();
+			return new File(strmc + File.separator + "resources" + File.separator + "Simukraft2" + File.separator + subCategory).getAbsolutePath();
 		}
 		catch (Exception e)
 		{
@@ -32,7 +32,7 @@ public class SUK2IO
 		}
 	}
 	
-	public static String getTempFolder()
+	/*public static String getTempFolder()
 	{
 		try
 		{
@@ -93,7 +93,7 @@ public class SUK2IO
 		{
 			return "";
 		}
-	}
+	}*/
 	
 	public static String getModsFolder()
 	{
@@ -130,6 +130,20 @@ public class SUK2IO
 		catch (Exception e)
 		{
 			return null;
+		}
+	}
+	
+	public static String getResourcesFolder()
+	{
+		try
+		{
+			String strmc = new File(".").getAbsolutePath();
+			strmc = strmc.substring(0, strmc.length() - 1);
+			return new File(strmc + File.separator + "resources").getAbsolutePath();
+		}
+		catch (Exception e)
+		{
+			return "";
 		}
 	}
 }

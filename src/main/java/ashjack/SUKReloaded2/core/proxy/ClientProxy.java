@@ -6,7 +6,6 @@ import java.util.logging.Logger;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.world.World;
-import ashjack.SUKReloaded2.core.util.ExternalTextureLoader;
 import ashjack.SUKReloaded2.entity.EntityFolk;
 import ashjack.SUKReloaded2.entity.RenderFolk;
 import cpw.mods.fml.client.registry.RenderingRegistry;
@@ -50,7 +49,6 @@ public class ClientProxy extends CommonProxy
     @Override
     public void postInit(FMLPostInitializationEvent event) 
     {
-		ExternalTextureLoader.pushTextures();
 		super.postInit(event);
     }
 }

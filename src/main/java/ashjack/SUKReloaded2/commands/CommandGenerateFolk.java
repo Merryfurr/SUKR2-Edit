@@ -49,6 +49,8 @@ public class CommandGenerateFolk implements ICommand
     @Override 
     public void processCommand(ICommandSender sender, String[] argString)
     { 
+    	
+    	
         World world = sender.getEntityWorld(); 
     
         if (world.isRemote) 
