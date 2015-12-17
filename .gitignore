@@ -57,3 +57,6 @@ Temporary Items
 .apdisk
 *.lock
 *.bin
+.settings/org.eclipse.jdt.core.prefs
+.gradle/2.0/taskArtifacts/taskArtifacts.bin
+*.bin
