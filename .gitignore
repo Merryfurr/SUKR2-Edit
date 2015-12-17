@@ -55,3 +55,5 @@ eclipse/
 Network Trash Folder
 Temporary Items
 .apdisk
+*.lock
+*.bin
